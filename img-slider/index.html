@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon2.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Slider</title>
+
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+    <div class="outer-container">
+        <div class="container">
+            <img src="assets/dragon_1.jpg" alt="">
+            <img src="assets/dragon_2.jpg" alt="">
+            <img src="assets/dragon_3.jpg" alt="">
+            <img src="assets/dragon_4.jpg" alt="">
+            <img src="assets/dragon_5.jpg" alt="">
+            <img src="assets/dragon_6.jpg" alt="" class="hidden">
+            <img src="assets/dragon_7.jpg" alt="" class="hidden">
+            <img src="assets/dragon_8.jpg" alt="" class="hidden">
+            <img src="assets/dragon_9.jpg" alt="" class="hidden">
+            <img src="assets/dragon_10.jpg" alt="" class="hidden">
+        </div>
+    </div>
+    <button class="show-img" onclick="showImage()">Add an image</button>
+    
+    <h3>Made by</h3>
+    <h2>M Mahad Ashan</h2>
+
+    <script>
+        function showImage() {
+            const hiddenImages = document.querySelectorAll('.hidden');
+
+            if (hiddenImages.length > 0) {
+                const randomIndex = Math.floor(Math.random() * hiddenImages.length);
+                hiddenImages[randomIndex].classList.remove('hidden');
+            } else {
+                alert("No more images to show!");
+            }
+        }
+    </script>
+</body>
+</html>

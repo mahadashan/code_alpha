@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+        * {
+            font-family: Outfit;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body {
+            background-image: url("assets/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 50px;
+            font-size: 70px;
+            font-weight: lighter;
+            letter-spacing: 20px;
+        }
+
+        .outer-container {
+            background-color: rgba(179, 179, 179, 0.089);
+            border-radius: 30px;
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            position: relative;
+            box-shadow: 10px 10px 20px #928f8f2f 
+            ,-10px -10px 20px #928f8f2f;
+        }
+
+        .container {
+            width: 70%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            position: absolute;
+            top: 80px;
+        }
+
+        .container img {
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 80px;
+            transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+        }
+
+        .container img:hover {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show-img {
+            background-color: rgb(37, 35, 46);
+            padding: 20px;
+            font-size: 19px;
+            font-weight: lighter;
+            text-align: center;
+            color: rgb(231, 231, 231);
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            margin-top: 60px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .show-img:hover {
+            background-color: rgb(59, 57, 63);
+        }
+
+        h3 {
+            color: white;
+            font-weight: lighter;
+            letter-spacing: 9px;
+            position: absolute;
+            right: 11%;
+            bottom: 8%;
+        }
+
+        h2 {
+            color: white;
+            font-weight: lighter;
+            letter-spacing: 12px;
+            position: absolute;
+            right: 2%;
+            bottom: 5%;
+        }
